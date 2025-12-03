@@ -19,18 +19,27 @@
         .lesson-card {
             background-color: white;
             padding: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             border-radius: 5px;
             border-left: 5px solid #8c52ff; /* Warna Science */
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
         .lesson-card h4 {
             margin-top: 0;
-            cursor: pointer;
             color: #8c52ff;
+            font-size: 1.1em;
+        }
+        .lesson-detail {
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            font-size: 0.95em;
+        }
+        .lesson-detail ul {
+            padding-left: 20px;
         }
         .study-case-btn {
-            background-color: #28a745; /* Warna hijau untuk Studi Kasus */
+            background-color: #28a745;
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
@@ -42,7 +51,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Homepage</a>
+        <a href="index.html" style="color: white; float: left; text-decoration: none; padding-left: 15px;">&larr; Kembali ke Homepage</a>
         <div class="module-header">
             <h1>Modul 3: Data Science & Machine Learning</h1>
             <p>Membangun model cerdas untuk memprediksi dan mengklasifikasi.</p>
@@ -53,35 +62,78 @@
         <h2>Kurikulum Modul</h2>
 
         <h3>Level Basic: Python untuk Data</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.1: Pengenalan Dasar Python (Syntax & Struktur Data)</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Mengenal variabel, loops, dan list/dictionary.</p>
+            <div class="lesson-detail">
+                <p>Pelajari dasar-dasar bahasa pemrograman Python yang menjadi tulang punggung Data Science modern.</p>
+                <ul>
+                    <li>**Instalasi Python** dan penggunaan *package manager* (pip).</li>
+                    <li>Mengenal variabel, *loops*, dan *conditional statements*.</li>
+                    <li>Struktur data utama: **List, Dictionary, Tuple**.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.2: Mempelajari Pandas dan NumPy</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Cara memanipulasi *DataFrame* (tabel data) menggunakan library utama Python.</p>
+            <div class="lesson-detail">
+                <p>Kuasai *library* yang memungkinkan manipulasi dan perhitungan data yang efisien di Python.</p>
+                <ul>
+                    <li>**Pandas:** Menggunakan *DataFrame* untuk mengelola data tabular (seperti Excel).</li>
+                    <li>**NumPy:** Pengenalan operasi array numerik yang cepat.</li>
+                    <li>Menggunakan **Jupyter Notebook/Google Colab** sebagai lingkungan kerja.</li>
+                </ul>
+            </div>
         </div>
 
         <h3>Level Intermediate: Machine Learning Dasar</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 2.1: Supervised vs Unsupervised Learning</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Konsep perbedaan mendasar dalam Machine Learning.</p>
+            <div class="lesson-detail">
+                <p>Memahami dua pilar utama Machine Learning, kuncinya terletak pada apakah data Anda sudah memiliki label atau belum.</p>
+                <ul>
+                    <li>**Supervised:** Belajar dari data berlabel (misalnya, Klasifikasi dan Regresi).</li>
+                    <li>**Unsupervised:** Menemukan pola dalam data tanpa label (misalnya, Clustering).</li>
+                    <li>**Data Training vs. Data Testing** untuk validasi model.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 2.2: Implementasi Regresi Linier Sederhana</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Membangun model prediktif pertama Anda dengan Scikit-learn.</p>
+            <div class="lesson-detail">
+                <p>Membangun model *Machine Learning* pertama Anda. Kita akan fokus pada memprediksi nilai numerik.</p>
+                <ul>
+                    <li>Mengenal library **Scikit-learn** dan fungsinya.</li>
+                    <li>Langkah-langkah **membuat model, melatih model, dan membuat prediksi**.</li>
+                    <li>Menginterpretasikan hasil Regresi (koefisien).</li>
+                </ul>
+            </div>
         </div>
 
         <h3>Level Advance: Evaluasi & Optimasi Model</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.1: Overfitting, Underfitting, dan Metrik Evaluasi</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Memastikan model Anda akurat dan dapat digeneralisasi.</p>
+            <div class="lesson-detail">
+                <p>Pelajari cara menilai apakah model Anda benar-benar bagus dan dapat bekerja pada data baru.</p>
+                <ul>
+                    <li>**Overfitting:** Model terlalu menghafal data *training* (terlalu spesifik).</li>
+                    <li>**Underfitting:** Model terlalu sederhana dan gagal menangkap pola.</li>
+                    <li>Metrik Klasifikasi: **Accuracy, Precision, Recall**.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.2: Studi Kasus Optimasi</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Menganalisis kinerja model pada data dunia nyata.
-                <br><a href="studi_kasus_science.html" class="study-case-btn">Lihat Studi Kasus</a>
-            </p>
+            <div class="lesson-detail">
+                <p>Menerapkan pengetahuan evaluasi untuk memilih model terbaik. Fokus pada skenario dunia nyata seperti A/B Testing dan pemilihan fitur.</p>
+                <p>Anda akan belajar bagaimana *data scientist* membuat keputusan akhir tentang model mana yang akan digunakan di produksi.</p>
+                <a href="studi_kasus_science.html" class="study-case-btn">Lihat Studi Kasus</a>
+            </div>
         </div>
     </main>
 
