@@ -88,3 +88,59 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* --- CSS untuk Navigasi Bar (NAVBAR) --- */
+nav {
+    background-color: #343a40; /* Warna gelap untuk kontras */
+    overflow: hidden;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    padding-right: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Warna biru saat hover */
+}
+
+/* Responsif Dasar untuk Navbar (opsional) */
+@media screen and (max-width: 600px) {
+    nav .logo {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+    nav ul li {
+        float: none;
+    }
+}
