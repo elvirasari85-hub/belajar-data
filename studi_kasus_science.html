@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studi Kasus: Klasifikasi Email Spam</title>
+    <title>Studi Kasus: Optimasi Iklan dengan Machine Learning</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* CSS Khusus Studi Kasus Science */
@@ -36,10 +36,10 @@
 </head>
 <body>
     <header>
-        <a href="data_science.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Modul</a>
+        <a href="data_science.html" style="color: white; float: left; text-decoration: none; padding-left: 15px;">&larr; Kembali ke Modul</a>
         <div style="text-align: center; padding: 20px;">
-            <h1>Studi Kasus: Membangun Filter Spam dengan Machine Learning</h1>
-            <p>Menggunakan Python untuk mengklasifikasikan email secara otomatis.</p>
+            <h1>Studi Kasus: Prediksi Konversi Iklan (A/B Testing)</h1>
+            <p>Menggunakan Machine Learning untuk memilih desain iklan terbaik yang menghasilkan penjualan.</p>
         </div>
     </header>
 
@@ -47,32 +47,33 @@
         
         <div class="problem-statement">
             <h3>Situasi:</h3>
-            <p>Kotak masuk Anda dibanjiri email yang tidak berguna. Anda ingin membangun model yang dapat membedakan email 'Normal' (Ham) dan email 'Sampah' (Spam) hanya dengan melihat konten teksnya.</p>
+            <p>Anda menjalankan kampanye A/B Testing untuk dua desain iklan baru (Iklan A dan Iklan B). Anda ingin membangun model klasifikasi (*Machine Learning*) untuk memprediksi iklan mana yang paling mungkin di-klik dan berujung pada pembelian (konversi) berdasarkan data demografi pengguna.</p>
         </div>
 
         <h2>Langkah Praktis Solusi (Tahapan Data Science)</h2>
 
         <div class="step">
-            <h4>Tahap 1: Persiapan Data (Pandas & NumPy)</h4>
-            <p>Muat dataset email yang sudah berlabel (Ham/Spam) menggunakan library **Pandas**. Lakukan *text preprocessing* (membersihkan tanda baca dan huruf besar).</p>
+            <h4>Tahap 1: Persiapan dan Pembagian Data</h4>
+            <p>Gunakan Pandas untuk memuat data. Bagi data menjadi **Training Set** (untuk melatih model) dan **Testing Set** (untuk menguji akurasi). Ini mencegah *overfitting*.</p>
         </div>
 
         <div class="step">
-            <h4>Tahap 2: Feature Engineering (Vektor Teks)</h4>
-            <p>Ubahlah teks email menjadi angka yang dapat dimengerti oleh komputer (misalnya menggunakan teknik *CountVectorizer* atau TF-IDF) karena model ML hanya memahami angka.</p>
+            <h4>Tahap 2: Pemodelan Klasifikasi</h4>
+            <p>Gunakan model **Logistic Regression** (Regresi Logistik) dari Scikit-learn. Tujuan model: Memprediksi 0 (Tidak Beli) atau 1 (Beli) berdasarkan input data demografi.</p>
         </div>
         
         <div class="step">
-            <h4>Tahap 3: Pemodelan (Scikit-learn)</h4>
-            <p>Gunakan algoritma klasifikasi sederhana, seperti **Naive Bayes** atau **Logistic Regression**, dari library *Scikit-learn* untuk melatih model berdasarkan data teks yang sudah menjadi angka.</p>
+            <h4>Tahap 3: Evaluasi dan Perbandingan</h4>
+            <p>Latih model menggunakan data Iklan A dan Iklan B secara terpisah. Bandingkan hasilnya menggunakan **Metrik Akurasi** dan **Recall**. </p>
+            <p>Model mana yang memiliki **Recall** tertinggi (paling baik menemukan pembelian)?</p>
         </div>
         
         <div class="step">
-            <h4>Tahap 4: Evaluasi</h4>
-            <p>Ukur performa model (misalnya menggunakan metrik Akurasi atau F1-Score) untuk memastikan model mampu memblokir sebagian besar spam tanpa salah memblokir email penting.</p>
+            <h4>Tahap 4: Rekomendasi Bisnis</h4>
+            <p>Berdasarkan hasil evaluasi ML, Anda merekomendasikan: "Hentikan Iklan B dan alokasikan 90% anggaran ke Iklan A, karena model memprediksi Iklan A memiliki tingkat konversi 15% lebih tinggi."</p>
         </div>
         
-        <p style="margin-top: 30px;">Dengan model yang sudah dilatih, sistem dapat secara otomatis mengklasifikasikan email baru yang masuk.</p>
+        <p style="margin-top: 30px;">Model ML mengubah data mentah menjadi keputusan yang menghasilkan keuntungan.</p>
         <a href="data_science.html" class="science-btn">Selesai Studi Kasus</a>
 
     </main>
