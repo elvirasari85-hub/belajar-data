@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus: Validasi Data Penjualan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus Studi Kasus */
+        .case-study-content {
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .step {
+            margin-bottom: 20px;
+            border-left: 4px solid #ff9900;
+            padding-left: 15px;
+        }
+        .problem-statement {
+            background-color: #fff0e6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="data_entry.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Modul</a>
+        <div style="text-align: center; padding: 20px;">
+            <h1>Studi Kasus: Migrasi Data Karyawan</h1>
+            <p>Mengaplikasikan Data Validation dan SQL Dasar.</p>
+        </div>
+    </header>
+
+    <main class="case-study-content">
+        
+        <div class="problem-statement">
+            <h3>Situasi:</h3>
+            <p>Anda bertanggung jawab memindahkan data 500 karyawan dari file Excel lama ke sistem database HRIS baru. Data Excel memiliki format tanggal yang tidak konsisten, dan beberapa kolom 'ID Karyawan' ada yang kosong (missing value).</p>
+        </div>
+
+        <h2>Langkah Praktis Solusi (Tahapan Anda)</h2>
+
+        <div class="step">
+            <h4>Tahap 1: Data Validation di Excel</h4>
+            <p>Gunakan fitur 'Text to Columns' untuk memastikan kolom Tanggal Lahir (DD/MM/YYYY) diformat sama. Gunakan Conditional Formatting untuk menandai sel 'ID Karyawan' yang kosong.</p>
+        </div>
+
+        <div class="step">
+            <h4>Tahap 2: Menghilangkan Duplikasi</h4>
+            <p>Gunakan fitur 'Remove Duplicates' pada kolom ID Karyawan untuk memastikan setiap karyawan hanya terdaftar sekali.</p>
+        </div>
+        
+        <div class="step">
+            <h4>Tahap 3: Persiapan untuk SQL</h4>
+            <p>Simpan data Excel yang sudah bersih menjadi file CSV. Kemudian, bayangkan dan tuliskan perintah SQL untuk mengambil data karyawan yang gajinya di atas rata-rata.</p>
+            <code>SELECT Nama, Gaji FROM Karyawan WHERE Gaji > (SELECT AVG(Gaji) FROM Karyawan);</code>
+        </div>
+        
+        <p style="margin-top: 30px;">Dengan menyelesaikan tahapan ini, data Anda siap untuk proses migrasi yang aman dan akurat.</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Master Data Learning. Belajar Data, Ubah Karir.</p>
+    </footer>
+</body>
+</html>
