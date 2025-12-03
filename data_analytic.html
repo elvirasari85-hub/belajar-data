@@ -19,18 +19,27 @@
         .lesson-card {
             background-color: white;
             padding: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             border-radius: 5px;
             border-left: 5px solid #ff9900; /* Warna Analytic */
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
         .lesson-card h4 {
             margin-top: 0;
-            cursor: pointer;
             color: #ff9900;
+            font-size: 1.1em;
+        }
+        .lesson-detail {
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            font-size: 0.95em;
+        }
+        .lesson-detail ul {
+            padding-left: 20px;
         }
         .study-case-btn {
-            background-color: #28a745; /* Warna hijau untuk Studi Kasus */
+            background-color: #28a745;
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
@@ -42,7 +51,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Homepage</a>
+        <a href="index.html" style="color: white; float: left; text-decoration: none; padding-left: 15px;">&larr; Kembali ke Homepage</a>
         <div class="module-header">
             <h1>Modul 2: Data Analytic & Visualisasi</h1>
             <p>Ubah data menjadi wawasan yang dapat mendorong keputusan bisnis.</p>
@@ -53,35 +62,82 @@
         <h2>Kurikulum Modul</h2>
 
         <h3>Level Basic: Statistika Deskriptif & Tools Dasar</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.1: Memahami Mean, Median, dan Mode</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Menganalisis pusat data dan penyebarannya (Range dan Standar Deviasi dasar).</p>
+            <div class="lesson-detail">
+                <p>Pelajari statistik dasar untuk merangkum dan memahami pusat data Anda, kunci untuk analisis awal yang benar.</p>
+                <ul>
+                    <li>**Mean (Rata-rata):** Nilai sentral data.</li>
+                    <li>**Median:** Nilai tengah (mengatasi data yang miring/outlier).</li>
+                    <li>**Mode:** Nilai yang paling sering muncul dalam set data.</li>
+                    <li>Pengenalan konsep Range dan Varians dasar.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.2: Visualisasi Sederhana yang Efektif</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Kapan menggunakan Bar Chart, Line Chart, dan Pie Chart.</p>
+            <div class="lesson-detail">
+                <p>Pelajari cara memilih visualisasi yang tepat untuk menjawab pertanyaan bisnis tertentu. 
+
+[Image of common data charts including Bar Chart, Line Chart, and Pie Chart]
+</p>
+                <ul>
+                    <li>Menggunakan **Bar Chart** untuk perbandingan kategori.</li>
+                    <li>Menggunakan **Line Chart** untuk menunjukkan tren dari waktu ke waktu.</li>
+                    <li>Menggunakan **Pie Chart** hanya untuk proporsi sederhana.</li>
+                    <li>Prinsip dasar menghindari *chart* yang menyesatkan.</li>
+                </ul>
+            </div>
         </div>
 
         <h3>Level Intermediate: Dashboard & Tools Power BI/GDS</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 2.1: Pengenalan Tools Visualisasi Data</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Mengenal Power BI / Tableau / Google Data Studio (GDS) dan fungsinya.</p>
+            <div class="lesson-detail">
+                <p>Mengenal *tools* profesional (Power BI, Tableau, Google Data Studio) yang digunakan di industri untuk membuat laporan dinamis.</p>
+                <ul>
+                    <li>Memahami konsep **Drag-and-Drop** pada *tools* BI.</li>
+                    <li>Koneksi data dari berbagai sumber (Excel, SQL, Google Sheets).</li>
+                    <li>Memahami *interface* dan *layout* dasar.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 2.2: Merancang Dashboard Interaktif</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Prinsip-prinsip desain *dashboard* yang informatif dan mudah dibaca.</p>
+            <div class="lesson-detail">
+                <p>Merancang *dashboard* yang menceritakan kisah data. Fokus pada kegunaan (usability) dan interaktivitas.</p>
+                <ul>
+                    <li>Prinsip **Klaritas dan Kepadatan Informasi** dalam satu layar.</li>
+                    <li>Menambahkan *Filter* dan *Slice* agar pengguna dapat berinteraksi.</li>
+                    <li>Menggunakan **KPI (Key Performance Indicator)** yang jelas.</li>
+                </ul>
+            </div>
         </div>
 
         <h3>Level Advance: Analisis Prediktif Sederhana</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.1: Konsep Korelasi dan Regresi</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Memahami hubungan antar variabel dan memprediksi hasil.</p>
+            <div class="lesson-detail">
+                <p>Melangkah dari hanya merangkum data ke memprediksi hasil di masa depan menggunakan hubungan antar variabel.</p>
+                <ul>
+                    <li>**Korelasi:** Mengukur seberapa kuat dua variabel berhubungan (misalnya, iklan vs. penjualan).</li>
+                    <li>**Regresi:** Membuat garis tren untuk memprediksi nilai variabel (misalnya, memprediksi harga berdasarkan ukuran).</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.2: Studi Kasus Analisis Tren</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Menggunakan data historis untuk meramalkan tren.
-                <br><a href="studi_kasus_analytic.html" class="study-case-btn">Lihat Studi Kasus</a>
-            </p>
+            <div class="lesson-detail">
+                <p>Menerapkan analisis *Time Series* sederhana untuk memahami tren musiman dan peramalan (*forecasting*).</p>
+                <p>Anda akan belajar bagaimana tren historis membantu perencanaan bisnis dan alokasi sumber daya.</p>
+                <a href="studi_kasus_analytic.html" class="study-case-btn">Lihat Studi Kasus</a>
+            </div>
         </div>
     </main>
 
