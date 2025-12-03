@@ -36,10 +36,10 @@
 </head>
 <body>
     <header>
-        <a href="data_analytic.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Modul</a>
+        <a href="data_analytic.html" style="color: white; float: left; text-decoration: none; padding-left: 15px;">&larr; Kembali ke Modul</a>
         <div style="text-align: center; padding: 20px;">
-            <h1>Studi Kasus: Membuat Dashboard Penjualan Interaktif</h1>
-            <p>Mengubah ribuan baris data menjadi visualisasi yang mudah dibaca.</p>
+            <h1>Studi Kasus: Peramalan Stok dengan Analisis Tren</h1>
+            <p>Menganalisis data historis untuk memprediksi kebutuhan stok produk bulan depan.</p>
         </div>
     </header>
 
@@ -47,30 +47,35 @@
         
         <div class="problem-statement">
             <h3>Situasi:</h3>
-            <p>Anda memiliki data penjualan bulanan dari 10 cabang selama 3 tahun terakhir. Tim manajemen ingin melihat tren penjualan, performa cabang terbaik/terburuk, dan produk yang paling laku dalam satu tampilan *dashboard* yang interaktif.</p>
+            <p>Perusahaan Anda sering kehabisan stok produk A di bulan Desember, sementara stok produk B selalu berlebihan di bulan Agustus. Anda perlu menggunakan data penjualan 2 tahun terakhir untuk membuat model ramalan stok yang lebih akurat.</p>
         </div>
 
-        <h2>Langkah Praktis Solusi (Tahapan Visualisasi)</h2>
+        <h2>Langkah Praktis Solusi (Tahapan Analisis)</h2>
 
         <div class="step">
-            <h4>Tahap 1: Persiapan Data di Spreadsheet</h4>
-            <p>Hitung agregat: total penjualan per bulan, rata-rata penjualan per cabang, dan persentase kontribusi produk. Pastikan data sudah bersih.</p>
+            <h4>Tahap 1: Analisis Time Series (Tren)</h4>
+            <p>Plot data penjualan bulanan selama 24 bulan terakhir. Identifikasi **tren musiman (seasonal trend)** (misalnya, lonjakan penjualan di akhir tahun) dan **tren keseluruhan (overall trend)** (apakah penjualan secara umum naik atau turun).</p>
         </div>
 
         <div class="step">
-            <h4>Tahap 2: Pemilihan Visualisasi</h4>
-            <p>Gunakan **Line Chart** untuk menunjukkan Tren Penjualan Bulanan (jangka waktu). Gunakan **Bar Chart** untuk membandingkan performa 10 cabang. Gunakan **Pie Chart** (atau Donut Chart) untuk kontribusi produk.</p>
+            <h4>Tahap 2: Korelasi Data</h4>
+            <p>Hitung korelasi antara penjualan dan faktor eksternal (misalnya, hari libur nasional, biaya iklan). Ini membantu Anda mengidentifikasi variabel yang paling berpengaruh.</p>
         </div>
         
         <div class="step">
-            <h4>Tahap 3: Desain Dashboard di GDS/Power BI</h4>
-            <p>Susun visualisasi tersebut pada satu halaman. Tambahkan *Filter* (misalnya filter tahun) agar manajemen dapat berinteraksi dengan data. Dashboard yang baik menceritakan kisah yang cepat.</p>
+            <h4>Tahap 3: Visualisasi Peramalan</h4>
+            <p>Buat *Line Chart* yang menampilkan data aktual (historis) dan data yang diramalkan (proyeksi) dalam satu grafik. Hal ini memvisualisasikan **perbedaan antara data historis dan proyeksi** yang Anda buat.</p>
+        </div>
+        
+        <div class="step">
+            <h4>Tahap 4: Rekomendasi Bisnis</h4>
+            <p>Berdasarkan proyeksi, berikan rekomendasi spesifik: "Meningkatkan pemesanan stok Produk A sebesar 15% pada Q4" dan "Mengurangi pemesanan Produk B sebesar 20% pada Q3."</p>
         </div>
         
         <p style="margin-top: 30px;">
 
-[Image of a data analysis dashboard example with line, bar, and pie charts]
-Dengan *dashboard* ini, keputusan dapat diambil dalam hitungan menit, bukan jam.</p>
+[Image of a line chart showing historical sales data and a predicted forecast line]
+Dengan analisis tren, Anda dapat meminimalkan kerugian akibat kelebihan stok dan kehilangan penjualan akibat kekurangan stok.</p>
         <a href="data_analytic.html" class="analytic-btn">Selesai Studi Kasus</a>
 
     </main>
