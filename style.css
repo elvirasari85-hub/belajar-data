@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.course-section {
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.course-section h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Warna untuk masing-masing bagian */
+.entry-color { background-color: #e6f7ff; border-left: 5px solid #007bff; }
+.analytic-color { background-color: #fff0e6; border-left: 5px solid #ff9900; }
+.science-color { background-color: #f0e6ff; border-left: 5px solid #8c52ff; }
+
+.levels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.levels h3 {
+    flex-basis: 30%;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.entry-color-btn { background-color: #007bff; }
+.analytic-color-btn { background-color: #ff9900; }
+.science-color-btn { background-color: #8c52ff; }
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
