@@ -19,18 +19,27 @@
         .lesson-card {
             background-color: white;
             padding: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 15px; /* Dibuat sedikit lebih besar */
             border-radius: 5px;
-            border-left: 5px solid #007bff; /* Warna Data Entry */
+            border-left: 5px solid #007bff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
         .lesson-card h4 {
             margin-top: 0;
-            cursor: pointer;
             color: #007bff;
+            font-size: 1.1em;
+        }
+        .lesson-detail {
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            font-size: 0.95em; /* Konten lebih mudah dibaca */
+        }
+        .lesson-detail ul {
+            padding-left: 20px;
         }
         .study-case-btn {
-            background-color: #28a745; /* Warna hijau untuk Studi Kasus */
+            background-color: #28a745;
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
@@ -42,7 +51,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Homepage</a>
+        <a href="index.html" style="color: white; float: left; text-decoration: none; padding-left: 15px;">&larr; Kembali ke Homepage</a>
         <div class="module-header">
             <h1>Modul 1: Data Entry & Pengelolaan Dasar</h1>
             <p>Dari Basic hingga Advance: Kuasai fondasi data yang bersih.</p>
@@ -53,35 +62,78 @@
         <h2>Kurikulum Modul</h2>
 
         <h3>Level Basic: Pengenalan Data & Spreadsheet</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.1: Apa Itu Data dan Pentingnya Kebersihan</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Mempelajari jenis data (numerik, teks) dan dampak data kotor.</p>
+            <div class="lesson-detail">
+                <p>Data adalah aset terpenting. Pelajaran ini membahas dasar-dasar data dan alasan mengapa data kotor (tidak akurat, duplikat) dapat merugikan bisnis.</p>
+                <ul>
+                    <li>Pengertian **Data Struktural vs. Non-Struktural**.</li>
+                    <li>**Dampak Missing Value** pada analisis.</li>
+                    <li>Prinsip Dasar **Validasi Input** saat memasukkan data.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 1.2: Fungsi Wajib di Excel / Google Sheets</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Menggunakan SUM, AVERAGE, VLOOKUP/XLOOKUP, dan Pivot Table dasar.</p>
+            <div class="lesson-detail">
+                <p>Kuasai fungsi spreadsheet yang harus diketahui setiap profesional data. Fokus pada efisiensi dan akurasi perhitungan.</p>
+                <ul>
+                    <li>Menggunakan **SUM, AVERAGE, MAX, MIN** untuk statistik deskriptif.</li>
+                    <li>Memanfaatkan **VLOOKUP/XLOOKUP** untuk menggabungkan data dari tabel berbeda.</li>
+                    <li>Menganalisis data dengan cepat menggunakan **Pivot Table**.</li>
+                </ul>
+            </div>
         </div>
 
-        <h3>Level Intermediate: Teknik Data Cleaning</h3>
+        <h3>Level Intermediate: Teknik Data Cleaning (Pembersihan Data)</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 2.1: Menghapus Duplikasi dan Mengatasi Missing Value</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Teknik cepat menggunakan fitur unik data dan mengisi nilai yang hilang.</p>
+            <div class="lesson-detail">
+                <p>Pelajari teknik praktis untuk membersihkan *dataset* yang besar dan tidak rapi.</p>
+                <ul>
+                    <li>Fitur **Remove Duplicates** (Hapus Duplikasi) di Excel/Sheets.</li>
+                    <li>Teknik mengisi *Missing Value* dengan **rata-rata** atau nilai **modus**.</li>
+                    <li>Menggunakan fungsi **TRIM** dan **CLEAN** untuk membersihkan spasi dan karakter tersembunyi.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
-            <h4>Pelajaran 2.2: Normalisasi Format Data (Tanggal, Mata Uang)</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Memastikan semua data memiliki format standar yang sama.</p>
+            <h4>Pelajaran 2.2: Normalisasi Format Data (Tanggal, Mata Uang, Teks)</h4>
+            <div class="lesson-detail">
+                <p>Menyeragamkan format adalah kunci untuk analisis yang akurat. Data yang tidak konsisten tidak dapat diolah.</p>
+                <ul>
+                    <li>Mengubah format tanggal agar **konsisten** (misalnya dari 1-1-2024 menjadi 01/01/2024).</li>
+                    <li>Memisahkan teks ke kolom berbeda menggunakan **Text to Columns**.</li>
+                    <li>Mengubah huruf besar/kecil (**UPPER/LOWER/PROPER**).</li>
+                </ul>
+            </div>
         </div>
 
         <h3>Level Advance: Integrasi dan SQL Dasar</h3>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.1: Pengenalan SQL (Structured Query Language)</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Memahami perintah SELECT, FROM, dan WHERE untuk mengambil data.</p>
+            <div class="lesson-detail">
+                <p>SQL adalah bahasa standar untuk database. Mempelajari dasar SQL memungkinkan Anda berinteraksi dengan data di luar spreadsheet.</p>
+                <ul>
+                    <li>Perintah dasar: **SELECT, FROM, WHERE** (Mengambil data).</li>
+                    <li>Pengenalan konsep **Primary Key** dan **Foreign Key**.</li>
+                    <li>Latihan dasar menggunakan platform SQL online gratis.</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="lesson-card">
             <h4>Pelajaran 3.2: Studi Kasus Lintas Platform</h4>
-            <p style="font-size: 0.9em; margin-top: 5px;">Mempersiapkan data untuk migrasi ke database.
-                <br><a href="studi_kasus_entry.html" class="study-case-btn">Lihat Studi Kasus</a>
-            </p>
+            <div class="lesson-detail">
+                <p>Pelajaran ini menghubungkan Spreadsheet (Excel/Sheets) dengan konsep Database (SQL) dan migrasi data.</p>
+                <p>Anda akan belajar bagaimana mempersiapkan file **CSV** (Comma Separated Values) agar siap diimpor ke sistem database apa pun.</p>
+                <a href="studi_kasus_entry.html" class="study-case-btn">Lihat Studi Kasus</a>
+            </div>
         </div>
     </main>
 
