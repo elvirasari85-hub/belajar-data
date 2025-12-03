@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus: Klasifikasi Email Spam</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus Studi Kasus Science */
+        .case-study-content {
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .step {
+            margin-bottom: 20px;
+            border-left: 4px solid #8c52ff; /* Warna Science */
+            padding-left: 15px;
+        }
+        .problem-statement {
+            background-color: #f0e6ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .science-btn {
+            background-color: #8c52ff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="data_science.html" style="color: white; float: left; text-decoration: none;">&larr; Kembali ke Modul</a>
+        <div style="text-align: center; padding: 20px;">
+            <h1>Studi Kasus: Membangun Filter Spam dengan Machine Learning</h1>
+            <p>Menggunakan Python untuk mengklasifikasikan email secara otomatis.</p>
+        </div>
+    </header>
+
+    <main class="case-study-content">
+        
+        <div class="problem-statement">
+            <h3>Situasi:</h3>
+            <p>Kotak masuk Anda dibanjiri email yang tidak berguna. Anda ingin membangun model yang dapat membedakan email 'Normal' (Ham) dan email 'Sampah' (Spam) hanya dengan melihat konten teksnya.</p>
+        </div>
+
+        <h2>Langkah Praktis Solusi (Tahapan Data Science)</h2>
+
+        <div class="step">
+            <h4>Tahap 1: Persiapan Data (Pandas & NumPy)</h4>
+            <p>Muat dataset email yang sudah berlabel (Ham/Spam) menggunakan library **Pandas**. Lakukan *text preprocessing* (membersihkan tanda baca dan huruf besar).</p>
+        </div>
+
+        <div class="step">
+            <h4>Tahap 2: Feature Engineering (Vektor Teks)</h4>
+            <p>Ubahlah teks email menjadi angka yang dapat dimengerti oleh komputer (misalnya menggunakan teknik *CountVectorizer* atau TF-IDF) karena model ML hanya memahami angka.</p>
+        </div>
+        
+        <div class="step">
+            <h4>Tahap 3: Pemodelan (Scikit-learn)</h4>
+            <p>Gunakan algoritma klasifikasi sederhana, seperti **Naive Bayes** atau **Logistic Regression**, dari library *Scikit-learn* untuk melatih model berdasarkan data teks yang sudah menjadi angka.</p>
+        </div>
+        
+        <div class="step">
+            <h4>Tahap 4: Evaluasi</h4>
+            <p>Ukur performa model (misalnya menggunakan metrik Akurasi atau F1-Score) untuk memastikan model mampu memblokir sebagian besar spam tanpa salah memblokir email penting.</p>
+        </div>
+        
+        <p style="margin-top: 30px;">Dengan model yang sudah dilatih, sistem dapat secara otomatis mengklasifikasikan email baru yang masuk.</p>
+        <a href="data_science.html" class="science-btn">Selesai Studi Kasus</a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Master Data Learning. Belajar Data, Ubah Karir.</p>
+    </footer>
+</body>
+</html>
